@@ -150,12 +150,12 @@ class PasswordGenerator:
         allchars = deepcopy(self._allchars)
         final_pass = []
         try:
-            for i in range(maxlen):
+            for in range(maxlen):
                 character = choice(allchars)
                 element_index = allchars.index(character)
                 final_pass.append(character)
                 allchars.pop(element_index)
-        except IndexError as e:
+        except IndexError as 
             raise ValueError("Length should less than 77 characters.")
 
         shuffle(final_pass)
